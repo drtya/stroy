@@ -1,0 +1,96 @@
+.footer {
+    padding: 40px 0 20px;
+    background: #2F323A;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 114px;
+        padding-bottom: 40px;
+
+        &-address-box {
+            width: 30%;
+        }
+
+        &-logo {}
+
+        &-address {
+            margin-top: 22px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &:last-child {
+                margin-top: 16px;
+            }
+
+            @include text(500, 16px, #E8E9EA);
+        }
+
+        &-menu {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+
+            &-col {
+                width: 100%;
+            }
+
+            &-li {
+                width: 100%;
+                margin-top: 12px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            &-link {
+
+                @include text(500, 16px, #E8E9EA);
+
+                position: relative;
+                transition: 0.3s;
+
+                &:hover {
+                    padding-left: 20px;
+
+                    &::before {
+
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 0;
+                        width: 16px;
+                        height: 16px;
+                        background: url(../image/footer/Icon_menu.png) center center/cover no-repeat;
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        border-top: 1px solid #5D6066;
+
+        &-pays {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            &-img {}
+        }
+
+        &-made {
+            @include text(500, 16px, #D1D1D3);
+        }
+    }
+}

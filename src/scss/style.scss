@@ -1,0 +1,32 @@
+@import '../fonts/manrope/manrope.css';
+@import '../lbrs/bootstrap/bootstrap-grid.min.css';
+@import '../lbrs/owl/owl.carousel.min.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+@import 'variables';
+@import 'header';
+@import 'home';
+@import 'discount';
+@import 'category';
+@import 'bestsellers';
+@import 'brands';
+@import 'feedback';
+@import 'popup';
+@import 'about';
+@import 'footer';

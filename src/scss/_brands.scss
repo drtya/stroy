@@ -1,0 +1,23 @@
+.brands {
+    margin-bottom: 80px;
+    &__header {
+        @include section_top();
+    }
+
+    &__owl {
+        margin-top: 16px;
+
+        &-img {
+            transition: 0.5s;
+            cursor: pointer;
+            width: 180px;
+            height: 124px;
+
+            &:hover {
+                box-shadow: 0 0 10px rgba(64, 59, 59, 0.3) ;
+                border: 1px solid #5D6066;
+            }
+        }
+    }
+
+}

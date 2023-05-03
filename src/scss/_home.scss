@@ -1,0 +1,87 @@
+.home {
+
+    padding: 40px 40px 0 40px;
+
+    
+
+    &__slider {
+        position: relative;
+        padding: 40px 100px;
+        height: 420px;
+        &-first {
+            background: url(../image/home/home_image.png) center/cover no-repeat;
+        }
+    
+        &-second {
+            background: url(../image/home/home_image2.png) center/cover no-repeat;
+        }
+        &__text-box {
+            &-title {
+                @include text(700, 48px, #171B24);
+                margin-bottom: 20px;
+            }
+
+            &-subtitle {
+                @include text(400, 20px, #454950);
+            }
+        }
+
+        &__more {
+            transition: 0.5s;
+            &:hover{
+                color: #D1D1D3;
+                background: #2F323A;
+            }
+            @include text(500, 18px, #171B24);
+            position: absolute;
+            bottom: 40px;
+            left: 100px;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            gap: 8px;
+
+            width: 147px;
+            height: 48px;
+
+            /* Main/FDF074 */
+
+            background: #FCEC41;
+        }
+    }
+
+    .slider-btn {
+        position: absolute;
+        right: 100px;
+        bottom: 58px;
+        display: flex;
+        gap: 12px;
+
+        &__el {
+            transition: 0.3s;
+            &:hover{
+                color: #D1D1D3;
+                background: #2F323A;
+                border: 1px solid #2F323A;
+            }
+            cursor: pointer;
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* BG/FFFFFF */
+
+            background: #FFFFFF;
+            /* BG/D1D1D3 */
+
+            border: 1px solid #D1D1D3;
+        }
+
+        
+    }
+}

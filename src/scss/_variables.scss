@@ -1,0 +1,53 @@
+@mixin text($fw, $fz, $col) {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fz;
+    color: $col;
+}
+
+@mixin hover_btn() {
+    transition: 0.5s;
+
+    &:hover {
+        color: #D1D1D3;
+        background: #2F323A;
+    }
+}
+
+@mixin section_top() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+        @include text(600, 34px, #2F323A);
+    }
+
+    &-btn {
+        @include hover_btn();
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 16px 12px 24px;
+        background: #FFFFFF;
+        border: 1px solid #D1D1D3;
+        @include text(500, 18px, #171B24);
+    }
+}
+
+@mixin popup-window($w) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 36px;
+    width: $w;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 24px;
+    
+}

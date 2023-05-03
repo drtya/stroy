@@ -1,0 +1,61 @@
+.discount{
+    padding: 80px 0;
+    .discount__header{
+        @include section_top();
+    }
+    &__box{
+        margin-top: 16px;
+        border: 1px solid #E8E9EA;
+        display: flex;
+        
+        position: relative;
+        &::after{
+            content: '-25%';
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            padding: 4px 8px ;
+            border: 2px solid #FBE303;
+            background: #FFFFFF;
+            @include text(500,15px,#171B24);
+        }
+        .discount__image{
+            width: 40%;
+            border-right: 1px solid #E8E9EA;
+            object-fit: cover;
+        }
+        .description{
+            width: 60%;
+            position: relative;
+            padding: 16px;
+            &__text{
+                @include text(500,16px,#2F323A);
+                
+                min-height: 74px;
+            }
+            &__price-box{
+                display: flex;
+                margin-bottom: 56px;
+            }
+            &__discount{
+                @include text(700,20px,#171B24);
+            }
+            &__price{
+                margin-left: 8px;
+                @include text(500,16px,#8B8D92);
+                text-decoration: line-through;
+            }
+            &__btn{
+                @include hover_btn();
+                cursor: pointer;
+                position: absolute;
+                background: #FCEC41;
+                padding: 12px 24px;
+                border: none;
+                bottom: 16px;
+                width: calc(100% - 32px);
+            }
+        }
+    }
+
+}

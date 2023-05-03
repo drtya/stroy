@@ -1,0 +1,91 @@
+.feedback {
+    background: #F6F6F6;
+    padding: 80px 0;
+    &__header {
+        margin-bottom: 16px;
+        @include section_top();
+    }
+
+    &__margin-left {
+        margin-left: 140px;
+    }
+
+    &__card {
+
+        position: relative;
+        background: #FFFFFF;
+/* BG/E8E9EA */
+
+border: 1px solid #E8E9EA;
+        &::before {
+            content: '';
+            background: url(../image/feedback/card_decor.png) center center/cover no-repeat;
+            position: absolute;
+            width: 32px;
+            height: 24px;
+            top: 24px;
+            right: 24px;
+        }
+
+        padding: 24px;
+
+        &-name {
+            @include text(700, 18px, #2F323A);
+
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+
+        }
+
+        &-img {
+            width: 52px;
+            height: 52px;
+        }
+
+        &-info {
+            @include text(400, 16px, #2F323A);
+            min-height: 216px;
+            margin-bottom: 15px;
+        }
+
+        &-date {
+            @include text(500, 15px, #8B8D92);
+        }
+    }
+
+    .slider-btn {
+        position: absolute;
+        right: 140px;
+        top: -68px;
+        display: flex;
+        gap: 12px;
+
+        &__el {
+            transition: 0.3s;
+
+            &:hover {
+                color: #D1D1D3;
+                background: #2F323A;
+                border: 1px solid #2F323A;
+            }
+
+            cursor: pointer;
+            padding: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* BG/FFFFFF */
+
+            background: #FFFFFF;
+            /* BG/D1D1D3 */
+
+            border: 1px solid #D1D1D3;
+        }
+
+
+    }
+
+}
