@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-desktop">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="#" class="header-top__link" id="open-city-popup">
+                            <img class="header-top__img" src="../../images/header/location.svg" alt="pin"> Москва
+                        </a>
+                        <div class="d-flex header-top__menu">
+                            <a href="#" class="header-top__link">Бренды</a>
+                            <a href="../delivery/" class="header-top__link">Доставка</a>
+                            <a href="../return/" class="header-top__link">Возврат</a>
+                            <a href="../docs/" class="header-top__link">Документация</a>
+                            <a href="../contacts/" class="header-top__link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <a href="../../../" class="header-middle__logo">
+                            <img src="../../images/header/logo.png" alt="" class="header-middle__logo-img">
+                        </a>
+                        <div class="d-flex align-items-center header-middle__common">
+                            <a href="../catalog/" class="header-middle__catalog">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 18L14.5 18" stroke="#2F323A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.5 12L20.5 12" stroke="#2F323A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.5 6L10.5 6" stroke="#2F323A" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Каталог
+                            </a>
+
+                            <form action="" class="header-middle__form">
+                                <input type="text" placeholder="Поиск" class="header-middle__input">
+                                <button type="submit" class="header-middle__btn">
+                                    <img class="header-middle__img" src="../../images/header/Icon (4).png" alt="">
+                                </button>
+                            </form>
+                            <div class="header-middle__profile">
+                                <a href="" class="header-middle__link" id="open-login-popup">
+                                    <img src="../../images/header/Icon (1).png" alt="">
+                                    Профиль
+                                </a>
+                                <a href="" class="header-middle__link">
+                                    <img src="../../images/header/Icon (2).png" alt="">
+                                    <br>
+                                    Заказы
+                                </a>
+                                <a href="" class="header-middle__link">
+                                    <img src="../../images/header/Icon (3).png" alt="">
+                                    Корзина
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <nav class="d-flex header-bottom__nav justify-content-between align-items-center">
+                        <a href="" class="header-bottom__link">Акции</a>
+                        <a href="" class="header-bottom__link">Строительные материалы</a>
+                        <a href="" class="header-bottom__link">Керамическая плитка</a>
+                        <a href="" class="header-bottom__link">Краски</a>
+                        <a href="" class="header-bottom__link">Сантехника</a>
+                        <a href="" class="header-bottom__link">Напольные покрытия</a>
+                        <a href="" class="header-bottom__link">Инструменты</a>
+                        <a href="" class="header-bottom__link">Обои</a>
+                        <a href="" class="header-bottom__link">Окна</a>
+                    </nav>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="brand-main">
+        <section class="brand-home">
+            <div class="brand-home__bg">
+                <nav aria-label="Breadcrumb" class="brand-home__crumbs">
+                    <ul class="brand-home__ul">
+                        <li class="brand-home__li"><a href="../../../">Главная</a></li>
+                        <li class="brand-home__li"><a href="#">Все продавцы</a></li>
+                    </ul>
+                </nav>
+                <h2 class="brand-home__title">Все бренды</h2>
+            </div>
+        </section>
+        <section class="brand">
+            <div class="container">
+                <div class="brands__header">
+                    <h3 class="brands__header-title">Популярные бренды</h3>
+                    <button class="brands__header-btn">Все бренды<i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div class="brands__owl">
+                    <div class="owl-carousel owl-theme owl-loaded" id="brands_top">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item">
+                                    <img src="../../images/brands/top0.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/top1.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/top2.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/top3.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/top4.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/top5.png" alt="" class="brands__owl-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brands__owl">
+                    <div class="owl-carousel owl-theme owl-loaded" id="brands_bottom">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item">
+                                    <img src="../../images/brands/bottom0.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/bottom1.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/bottom2.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/bottom3.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/bottom4.png" alt="" class="brands__owl-img">
+                                </div>
+                                <div class="owl-item">
+                                    <img src="../../images/brands/bottom5.png" alt="" class="brands__owl-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <section class="brand-letters">
+                    <div class="brand-tabs">
+                        <ul class="brand-tabs__caption">
+                            <li class="brand-tabs__btn brand-tabs__btn_active">Все</li>
+                            <li class="brand-tabs__btn">A</li>
+                            <li class="brand-tabs__btn">B</li>
+                            <li class="brand-tabs__btn">C</li>
+                            <li class="brand-tabs__btn">D</li>
+                            <li class="brand-tabs__btn">E</li>
+                            <li class="brand-tabs__btn">F</li>
+                            <li class="brand-tabs__btn">G</li>
+                            <li class="brand-tabs__btn">H</li>
+                            <li class="brand-tabs__btn">I</li>
+                            <li class="brand-tabs__btn">J</li>
+                            <li class="brand-tabs__btn">K</li>
+                            <li class="brand-tabs__btn">L</li>
+                            <li class="brand-tabs__btn">M</li>
+                            <li class="brand-tabs__btn">N</li>
+                            <li class="brand-tabs__btn">O</li>
+                            <li class="brand-tabs__btn">P</li>
+                            <li class="brand-tabs__btn">Q</li>
+                            <li class="brand-tabs__btn">R</li>
+                            <li class="brand-tabs__btn">S</li>
+                            <li class="brand-tabs__btn">T</li>
+                            <li class="brand-tabs__btn">U</li>
+                            <li class="brand-tabs__btn">V</li>
+                            <li class="brand-tabs__btn">W</li>
+                            <li class="brand-tabs__btn">Z</li>
+                            <br>
+                            <li class="brand-tabs__btn">А</li>
+                            <li class="brand-tabs__btn">Б</li>
+                            <li class="brand-tabs__btn">В</li>
+                            <li class="brand-tabs__btn">Г</li>
+                            <li class="brand-tabs__btn">Д</li>
+                            <li class="brand-tabs__btn">Е</li>
+                            <li class="brand-tabs__btn">Ж</li>
+                            <li class="brand-tabs__btn">З</li>
+                            <li class="brand-tabs__btn">И</li>
+                            <li class="brand-tabs__btn">К</li>
+                            <li class="brand-tabs__btn">Л</li>
+                            <li class="brand-tabs__btn">М</li>
+                            <li class="brand-tabs__btn">Н</li>
+                            <li class="brand-tabs__btn">О</li>
+                            <li class="brand-tabs__btn">П</li>
+                            <li class="brand-tabs__btn">Р</li>
+                            <li class="brand-tabs__btn">С</li>
+                            <li class="brand-tabs__btn">Т</li>
+                            <li class="brand-tabs__btn">У</li>
+                            <li class="brand-tabs__btn">Ф</li>
+                            <li class="brand-tabs__btn">Ш</li>
+                            <li class="brand-tabs__btn">Э</li>
+                            <li class="brand-tabs__btn">Я</li>
+                        </ul>
+
+                        <div class="brand-tabs__content brand-tabs__content_active">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        A
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">ASB-Woodline</p>
+                                    <p class="brand-tabs__text">Apecs</p>
+                                    <p class="brand-tabs__text">Azario</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">AVS</p>
+                                    <p class="brand-tabs__text">Appetite</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Alma Ceramica</p>
+                                    <p class="brand-tabs__text">Attribute</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Alvaro-Banos</p>
+                                    <p class="brand-tabs__text">Auto Standart</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Am.Pm</p>
+                                    <p class="brand-tabs__text">Axima</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        B
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">BLB</p>
+                                    <p class="brand-tabs__text">Belinka</p>
+                                    <p class="brand-tabs__text">Bussare</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">BOYSCOUT</p>
+                                    <p class="brand-tabs__text">Blocker</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">BRAVAT</p>
+                                    <p class="brand-tabs__text">Bosch</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Belani</p>
+                                    <p class="brand-tabs__text">Bostik</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Belezza</p>
+                                    <p class="brand-tabs__text">Braver</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        C
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Cemmix</p>
+                                    <p class="brand-tabs__text">Ceresit</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Ceramica Konskie</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Ceramica Konskie</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Ceresit</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Ceresit</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        D
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">DAP</p>
+                                    <p class="brand-tabs__text">Docke</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">DARIIS</p>
+                                    <p class="brand-tabs__text">Dora</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Damixa</p>
+                                    <p class="brand-tabs__text">Dufa</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Deco Room</p>
+                                    <p class="brand-tabs__text">Dulux</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Decoretto</p>
+                                    <p class="brand-tabs__text">Duschy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        E
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">EKF</p>
+                                    <p class="brand-tabs__text">Elfe</p>
+                                    <p class="brand-tabs__text">Estima</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">ESKO</p>
+                                    <p class="brand-tabs__text">Elysium</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">EUROTEX</p>
+                                    <p class="brand-tabs__text">Energizer</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Egger</p>
+                                    <p class="brand-tabs__text">Energy</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Element</p>
+                                    <p class="brand-tabs__text">Erismann</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        F
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fischer</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fora</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        G
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">GP BATTERIES</p>
+                                    <p class="brand-tabs__text">Giaretti</p>
+                                    <p class="brand-tabs__text">Gracia Ceramica</p>
+                                    <p class="brand-tabs__text">Grohe</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">GRANICOM</p>
+                                    <p class="brand-tabs__text">Gimi</p>
+                                    <p class="brand-tabs__text">Grinda</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">GSHOSE</p>
+                                    <p class="brand-tabs__text">GlobalTile</p>
+                                    <p class="brand-tabs__text">Grohe</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Gauss</p>
+                                    <p class="brand-tabs__text">Golden Tile</p>
+                                    <p class="brand-tabs__text">Gracia Ceramica</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Gayafores</p>
+                                    <p class="brand-tabs__text">Goldman</p>
+                                    <p class="brand-tabs__text">Grinda</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        H
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">HARO</p>
+                                    <p class="brand-tabs__text">Hobby</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">HEGEL</p>
+                                    <p class="brand-tabs__text">Home Color</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">HELP</p>
+                                    <p class="brand-tabs__text">Husky</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">HENKEL</p>
+                                    <p class="brand-tabs__text">Huter</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Hammer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        I
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">IEK</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">IKA</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">IVC</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Ideal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        J
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Jika</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        K
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">KLEO</p>
+                                    <p class="brand-tabs__text">Komar</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Karcher</p>
+                                    <p class="brand-tabs__text">Kraftool</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Kerama Marazzi</p>
+                                    <p class="brand-tabs__text">Krass</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Kiilto</p>
+                                    <p class="brand-tabs__text">Kronostar</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Kolner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        L
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">LUX</p>
+                                    <p class="brand-tabs__text">Lemax</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">LaFavola</p>
+                                    <p class="brand-tabs__text">Leonord</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Lasselsberger</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Legrand</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Lemark</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        M
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">METALTEX</p>
+                                    <p class="brand-tabs__text">Marburg</p>
+                                    <p class="brand-tabs__text">Milardo</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">MONETA</p>
+                                    <p class="brand-tabs__text">Marmiton</p>
+                                    <p class="brand-tabs__text">Monopole</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Makel</p>
+                                    <p class="brand-tabs__text">Marshall</p>
+                                    <p class="brand-tabs__text">Murol</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Makita</p>
+                                    <p class="brand-tabs__text">Matrix</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Mallony</p>
+                                    <p class="brand-tabs__text">Meiwa Gravure Co., Ltd</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        N
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">NRAVA HOME</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Norta</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        O
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">OLF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        P
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">P&P</p>
+                                    <p class="brand-tabs__text">Pasabahce</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">PALLADIUM</p>
+                                    <p class="brand-tabs__text">Phibo</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">PROSEPT</p>
+                                    <p class="brand-tabs__text">Plast team</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Palisad</p>
+                                    <p class="brand-tabs__text">Polynor</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Park</p>
+                                    <p class="brand-tabs__text">Power Cube</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        Q
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Quick-Step</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        R
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Rasch</p>
+                                    <p class="brand-tabs__text">Rossinka</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Realistik</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Regent</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Rehau</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Roca</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        S
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Safeline</p>
+                                    <p class="brand-tabs__text">Soudal</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Salag</p>
+                                    <p class="brand-tabs__text">Stayer</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Santool</p>
+                                    <p class="brand-tabs__text">Swensa</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Schneider Electric</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Sheffilton</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        T
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">T4P</p>
+                                    <p class="brand-tabs__text">Toplight</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">TRIUMPH NORD</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Tarkett</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Thermo</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Tokito</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        U
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text"></p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fora</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        F
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fischer</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fora</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        F
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fischer</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fora</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-tabs__content">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <h2 class="brand-tabs__title">
+                                        F
+                                    </h2>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fischer</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="brand-tabs__text">Fora</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+            </div>
+        </section>
+        </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__top-mail">
+                    <img src="../../images/footer/logo.png" alt="" class="footer__top-logo"> <br>
+                    <a href="" class="footer__top-email">
+                        <img src="../../images/footer/Icon1.png" alt="" class="footer__top-email-icon">
+                        info@stroykastore.ru
+                    </a> <br>
+                    <a href="" class="footer__top-email">
+                        <img src="../../images/footer/Icon2.png" alt="" class="footer__top-email-icon">
+                        Москва, ул. Камушкина 10
+                    </a>
+                </div>
+
+                <nav class="nav">
+                    <div class="row">
+                        <div class="col-4">
+                            <a href="../personalArea/" class="footer__link">
+                                <p class="footer__link-text">Личный кабинет</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Заказы</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Избранное</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Корзина</p>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="../catalog/" class="footer__link">
+                                <p class="footer__link-text">Каталог</p>
+                            </a>
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Акции</p>
+                            </a>
+                            <a href="#" class="footer__link">
+                                <p class="footer__link-text">Бренды</p>
+                            </a>
+                            <a href="../contacts/" class="footer__link">
+                                <p class="footer__link-text">Контакты</p>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="" class="footer__link">
+                                <p class="footer__link-text">Стать продавцом</p>
+                            </a>
+                            <a href="../delivery/" class="footer__link">
+                                <p class="footer__link-text">Доставка</p>
+                            </a>
+                            <a href="../return/" class="footer__link">
+                                <p class="footer__link-text">Возврат</p>
+                            </a>
+                            <a href="../docs/" class="footer__link">
+                                <p class="footer__link-text">Документация</p>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <hr>
+            <div class="footer__bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img src="../../images/footer/text1.png" alt="" class="footer__bottom-img">
+                    <img src="../../images/footer/visa-mir.png" alt="" class="footer__bottom-img">
+                    <img src="../../images/footer/KRUGLOV-STUDIO.png" alt="" class="footer__bottom-img">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../../libs/jquery/jquery.js"></script>
+    <script src="../../libs/owl/owl.carousel.min.js"></script>
+    <script src="./brand.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

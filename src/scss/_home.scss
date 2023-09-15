@@ -1,87 +1,95 @@
 .home {
+    padding: 40px 40px 0;
 
-    padding: 40px 40px 0 40px;
-
-    
-
-    &__slider {
-        position: relative;
+    &-slide {
         padding: 40px 100px;
-        height: 420px;
-        &-first {
-            background: url(../image/home/home_image.png) center/cover no-repeat;
-        }
-    
-        &-second {
-            background: url(../image/home/home_image2.png) center/cover no-repeat;
-        }
-        &__text-box {
-            &-title {
-                @include text(700, 48px, #171B24);
-                margin-bottom: 20px;
-            }
+        max-height: 420px;
+        min-height: 420px;
+        position: relative;
 
-            &-subtitle {
-                @include text(400, 20px, #454950);
-            }
+        &_first {
+            background: url(../images/home/img1.png) center/cover no-repeat;
+
         }
 
-        &__more {
-            transition: 0.5s;
-            &:hover{
-                color: #D1D1D3;
-                background: #2F323A;
-            }
-            @include text(500, 18px, #171B24);
-            position: absolute;
-            bottom: 40px;
-            left: 100px;
-            cursor: pointer;
-            border: none;
+        &_second {
+            background: url(../images/home/img2.png) center/cover no-repeat;
+
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            /* or 58px */
+
             display: flex;
-            flex-direction: row;
-            justify-content: center;
             align-items: center;
+
+            /* Text/171B24 */
+
+            color: #171B24;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            /* or 28px */
+
+            display: flex;
+            align-items: center;
+
+            /* Text/454950 */
+
+            color: #454950;
+
+        }
+
+        &__more-btn {
+            cursor: pointer;
+            @include hover_btn();
             padding: 12px 24px;
-            gap: 8px;
-
-            width: 147px;
-            height: 48px;
-
-            /* Main/FDF074 */
-
             background: #FCEC41;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 136%;
+            /* or 24px */
+
+
+            /* Text/171B24 */
+
+            color: #171B24;
+            display: inline-block;
+            position: absolute;
+            left: 100px;
+            bottom: 30px;
         }
     }
 
-    .slider-btn {
+    .owl-nav {
         position: absolute;
+        bottom: 40px;
         right: 100px;
-        bottom: 58px;
         display: flex;
         gap: 12px;
 
-        &__el {
-            transition: 0.3s;
-            &:hover{
-                color: #D1D1D3;
-                background: #2F323A;
-                border: 1px solid #2F323A;
-            }
+        .home__prev,
+        .home__next {
             cursor: pointer;
-            padding: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            /* BG/FFFFFF */
-
             background: #FFFFFF;
             /* BG/D1D1D3 */
-
-            border: 1px solid #D1D1D3;
+            display: flex;
+            align-items: center;
+            justify-content: center1;
+            border: 1px solid #000000;
+            padding: 10px;
+            @include hover_btn();
         }
 
-        
     }
 }

@@ -1,96 +1,41 @@
 .footer {
-    padding: 40px 0 20px;
+    color: #E8E9EA;
     background: #2F323A;
+
+    .col-4 {
+        width: 278px;
+    }
+
+    .nav {
+        padding-left: 162px;
+    }
+
+    &__link-text {
+        padding-bottom: 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+    }
 
     &__top {
         display: flex;
-        justify-content: space-between;
+        padding: 40px 0 40px;
+    }
+
+    &__top-logo {
+        padding-bottom: 22px;
+    }
+
+    &__top-email {
+        gap: 10px;
+        display: flex;
+        text-align: center;
         align-items: center;
-        gap: 114px;
-        padding-bottom: 40px;
-
-        &-address-box {
-            width: 30%;
-        }
-
-        &-logo {}
-
-        &-address {
-            margin-top: 22px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-
-            &:last-child {
-                margin-top: 16px;
-            }
-
-            @include text(500, 16px, #E8E9EA);
-        }
-
-        &-menu {
-            width: 70%;
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-
-            &-col {
-                width: 100%;
-            }
-
-            &-li {
-                width: 100%;
-                margin-top: 12px;
-
-                &:first-child {
-                    margin-top: 0;
-                }
-            }
-
-            &-link {
-
-                @include text(500, 16px, #E8E9EA);
-
-                position: relative;
-                transition: 0.3s;
-
-                &:hover {
-                    padding-left: 20px;
-
-                    &::before {
-
-                        position: absolute;
-                        content: '';
-                        left: 0;
-                        top: 0;
-                        width: 16px;
-                        height: 16px;
-                        background: url(../image/footer/Icon_menu.png) center center/cover no-repeat;
-
-
-                    }
-                }
-            }
-        }
     }
 
     &__bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 16px;
-        border-top: 1px solid #5D6066;
-
-        &-pays {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-
-            &-img {}
-        }
-
-        &-made {
-            @include text(500, 16px, #D1D1D3);
-        }
+        padding: 16px 0 20px;
     }
 }

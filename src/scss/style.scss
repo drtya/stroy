@@ -1,32 +1,95 @@
-@import '../fonts/manrope/manrope.css';
-@import '../lbrs/bootstrap/bootstrap-grid.min.css';
-@import '../lbrs/owl/owl.carousel.min.css';
+@import '../libs/btstr/bootstrap-grid.min.css';
+@import '../fonts/manrope.css';
+@import '../libs/owl/owl.carousel.min.css';
+@import '../libs/owl/owl.theme.default.css';
 
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family: 'Manrope', sans-serif;
+    // scroll-behavior: smooth;
 }
-input{
-    outline: none;
-}
-a{
+
+a,
+a:hover {
     text-decoration: none;
+    color: inherit;
 }
-li{
+
+ul {
     list-style-type: none;
 }
 
-@import 'variables';
-@import 'header';
-@import 'home';
-@import 'discount';
-@import 'category';
-@import 'bestsellers';
-@import 'brands';
-@import 'feedback';
-@import 'popup';
-@import 'about';
-@import 'footer';
+.to-top-btn {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #FCEC41;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+@mixin text($fw, $fz, $col) {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: $fw;
+    font-size: $fz;
+    color: $col;
+}
+
+@mixin hover_btn() {
+    transition: 0.5s;
+
+    &:hover {
+        color: #D1D1D3;
+        background: #2F323A;
+    }
+}
+
+@mixin section_top() {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include text(600, 34px, #2F323A);
+
+
+    &-btn {
+        @include hover_btn();
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 16px 12px 24px;
+        background: #FFFFFF;
+        border: 1px solid #D1D1D3;
+        @include text(500, 18px, #171B24);
+    }
+}
+
+
+@import './_header.scss';
+@import './_home.scss';
+@import './_stock.scss';
+@import './_category.scss';
+@import './_bestsellers.scss';
+@import './_brands.scss';
+@import './_feedback.scss';
+@import './about.scss';
+@import './footer.scss';
+@import './popup.scss';
+@import './delivery.scss';
+@import './contacts.scss';
+@import './docs.scss';
+@import './return.scss';
+@import './brand';
+@import './catalog';
+@import './personalArea';

@@ -1,0 +1,13 @@
+.brands_page{
+    .home{
+        margin: 40px 40px 80px;
+        background: url(../image/brandsPage/brandsPage_home.png) center/cover no-repeat;
+        padding: 40px 100px 90px;
+        &__path{
+
+        }
+        &__title{
+            margin-top: 20px;
+        }
+    }
+}
